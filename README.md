@@ -87,11 +87,11 @@ Contributions are welcome! Please open an issue or submit a pull request for any
 
 ## Demo Video
 
-!https://drive.google.com/file/d/1vQOXEvuzBbg69ytEgb7fxF-KccDPy10S/view?usp=sharing
+<a href = "https://drive.google.com/file/d/1vQOXEvuzBbg69ytEgb7fxF-KccDPy10S/view?usp=sharing"></a>
 
 ## Web Service
 
-!hackhcmc2024.azurewebsites.net
+<a href = "hackhcmc2024.azurewebsites.net"></a>
 
 ## License
 
