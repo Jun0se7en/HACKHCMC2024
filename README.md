@@ -24,35 +24,26 @@ To run this application, you need to have Python installed on your system. Follo
 1. **Clone the Repository**
 
     ```bash
-    git clone <repository-url>
-    cd <repository-directory>
+    git clone https://github.com/Jun0se7en/HACKHCMC2024.git
+    cd HACKHCMC2024
     ```
 
-2. **Create a Virtual Environment**
+2. **Build Docker Container**
 
     ```bash
-    python -m venv env
-    source env/bin/activate  # On Windows, use `env\Scripts\activate`
+    docker build -t hcmcapp .
     ```
 
-3. **Install Dependencies**
+3. **Docker Run to Run The App**
 
     ```bash
-    pip install -r requirements.txt
+    docker run -p 8051:8051 hcmcapp
     ```
 
-4. **Download YOLOv8 Models**
-
-    Place the YOLOv8 models in the `models` directory. Ensure the following models are available:
-    - `yolov8x.pt`
-    - `sit_stand_model.pt`
-    - `PG_model.pt`
-    - `beer_model.pt`
-
-5. **Run the Application**
+4. **Run the Application via localhost**
 
     ```bash
-    streamlit run app.py
+    open browser and access localhost:8051
     ```
 
 ## Usage
@@ -70,7 +61,6 @@ To run this application, you need to have Python installed on your system. Follo
 │   ├── PG_model.pt
 │   ├── posm_model.pt
 │   ├── sit_stand_model.pt
-│   └── yolov8x.pt
 ├── utils.py
 ├── app.py
 ├── requirements.txt
