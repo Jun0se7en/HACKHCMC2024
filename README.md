@@ -1,3 +1,109 @@
-# HACKHCMC2024
 
-## 
+# Heineken Problem-Solving Application
+
+## Overview
+
+This application is designed by Team KTK to solve several business problems related to Heineken's marketing and presence at various points of sale. The app uses advanced image processing and machine learning techniques to analyze uploaded images and provide insights based on predefined business problems.
+
+The application is built using Streamlit for the user interface and YOLOv8 models for object detection. It also uses the DeepFace library for facial emotion analysis.
+
+## Business Problems
+
+The application addresses the following business problems:
+
+1. **Count Beer Drinkers**: Detects and counts how many people are drinking Heineken-brand beers in the images.
+2. **Detect Promotional Materials**: Identifies and counts Heineken-branded promotional materials such as ice buckets, standees, umbrellas, and shelves.
+3. **Evaluate Event Success**: Assesses the success of events by analyzing the size of the crowd and the mood of the attendees.
+4. **Track Promotion Girls**: Identifies and verifies the presence of promotion girls at dining locations.
+5. **Grade Store Presence**: Grades the quality of Heineken's presence at stores by ensuring the deployment of display concepts such as billboards, fridges, and kegs.
+
+## Installation
+
+To run this application, you need to have Python installed on your system. Follow these steps to set up the application:
+
+1. **Clone the Repository**
+
+    ```bash
+    git clone <repository-url>
+    cd <repository-directory>
+    ```
+
+2. **Create a Virtual Environment**
+
+    ```bash
+    python -m venv env
+    source env/bin/activate  # On Windows, use `env\Scripts\activate`
+    ```
+
+3. **Install Dependencies**
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+4. **Download YOLOv8 Models**
+
+    Place the YOLOv8 models in the `models` directory. Ensure the following models are available:
+    - `yolov8x.pt`
+    - `sit_stand_model.pt`
+    - `PG_model.pt`
+    - `beer_model.pt`
+
+5. **Run the Application**
+
+    ```bash
+    streamlit run app.py
+    ```
+
+## Usage
+
+1. **Upload an Image**: Use the file uploader to select an image for analysis.
+2. **Select a Business Problem**: Choose one of the predefined business problems from the sidebar.
+3. **Analyze**: Click the 'Analyze' button to run the analysis on the uploaded image.
+
+## Project Structure
+
+```
+.
+├── models
+│   ├── beer_model.pt
+│   ├── PG_model.pt
+│   ├── posm_model.pt
+│   ├── sit_stand_model.pt
+│   └── yolov8x.pt
+├── utils.py
+├── app.py
+├── requirements.txt
+└── README.md
+```
+
+## Example Screenshots
+
+### Count Beer Drinkers
+![Count Beer Drinkers](screenshots/problem1.png)
+
+### Detect Promotional Materials
+![Detect Promotional Materials](screenshots/problem2.png)
+
+### Evaluate Event Success
+![Evaluate Event Success](screenshots/problem3.png)
+
+### Track Promotion Girls
+![Track Promotion Girls](screenshots/problem4.png)
+
+### Grade Store Presence
+![Grade Store Presence](screenshots/problem5.png)
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
+
+## License
+
+This project is licensed under the MIT License.
+
+## Acknowledgements
+
+- [Streamlit](https://streamlit.io/)
+- [YOLOv8](https://github.com/ultralytics/yolov5)
+- [DeepFace](https://github.com/serengil/deepface)
