@@ -85,6 +85,14 @@ To run this application, you need to have Python installed on your system. Follo
 
 Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
 
+## Demo Video
+
+!https://drive.google.com/file/d/1vQOXEvuzBbg69ytEgb7fxF-KccDPy10S/view?usp=sharing
+
+## Web Service
+
+!hackhcmc2024.azurewebsites.net
+
 ## License
 
 This project is licensed under the MIT License.
