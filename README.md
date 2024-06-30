@@ -91,7 +91,7 @@ Contributions are welcome! Please open an issue or submit a pull request for any
 
 ## Web Service
 
-[Web Service](hackhcmc2024.azurewebsites.net)
+[Web Service](https://hackhcmc2024.azurewebsites.net)
 
 ## License
 
