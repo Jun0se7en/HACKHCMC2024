@@ -69,9 +69,6 @@ To run this application, you need to have Python installed on your system. Follo
 
 ## Example Screenshots
 
-### Count Beer Drinkers
-![Count Beer Drinkers](screenshots/problem1.png)
-
 ### Detect Promotional Materials
 ![Detect Promotional Materials](screenshots/problem2.png)
 
